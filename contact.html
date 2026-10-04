@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact & Booking | Lotus Beauty Salon</title>
+<meta name="description" content="Book your appointment at Lotus Beauty Salon. Call, WhatsApp, email or request online — Mon–Sat 10AM–8PM, Sun 11AM–6PM.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,400&family=Jost:wght@200;300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="topbar">We reply within hours &nbsp;<span>— Mon–Sat 10AM–8PM</span></div>
+<header class="header" id="siteHeader"><div class="nav-inner">
+<a href="index.html" class="logo"><svg class="logo-mark" viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="18.5" stroke="#B9975B"/><path d="M10 22.5c2.4 4.4 5.9 6.6 10 6.6s7.6-2.2 10-6.6c-2.9 1.2-6.2 1.1-8.4-.6-.6 1-1.1 2-1.6 2-.5 0-1-1-1.6-2-2.2 1.7-5.5 1.8-8.4.6Z" fill="#B9975B" opacity=".85"/></svg><span><span class="logo-text">LOTUS</span><span class="logo-sub">BEAUTY SALON</span></span></a>
+<nav aria-label="Primary"><ul class="nav-links"><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="bridal.html">Bridal</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="offers.html">Offers</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
+<div class="nav-cta"><a href="contact.html#booking" class="btn btn-solid nav-book">Book Appointment</a><button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button></div>
+</div></header>
+<div class="mobile-menu" id="mobileMenu"><a class="mlink" href="index.html">Home <small>01</small></a><a class="mlink" href="about.html">About <small>02</small></a><a class="mlink" href="services.html">Services <small>03</small></a><a class="mlink" href="bridal.html">Bridal <small>04</small></a><a class="mlink" href="gallery.html">Gallery <small>05</small></a><a class="mlink" href="offers.html">Offers <small>06</small></a><a class="mlink" href="contact.html">Contact <small>07</small></a><a href="contact.html#booking" class="btn btn-solid">Book Appointment</a></div>
+
+<main id="main">
+<div class="page-hero"><img class="bg" src="https://images.unsplash.com/photo-1600948836101-f9ffda59d250?q=80&w=1800&auto=format&fit=crop" alt="Contact Lotus"><div class="wrap"><span class="crumb">Home — Contact</span><h1>Lotus <em style="font-style:italic;color:#D6BE8E">Beauty Salon</em></h1><p>Reserve, ask, or simply say hello — our concierge responds personally.</p></div></div>
+
+<section id="booking"><div class="wrap split">
+<div>
+<p class="eyebrow left reveal">Reserve</p>
+<h2 class="h-section reveal">REQUEST AN <em>APPOINTMENT</em></h2>
+<p class="lead left reveal">No payment required. Share your details and we confirm on call / WhatsApp.</p>
+<div class="contact-cards reveal" style="grid-template-columns:1fr 1fr;margin-top:26px">
+<a class="contact-card" href="tel:+910000000000"><div class="why-ico">✆</div><h3 style="font-size:19px">Call</h3><p style="font-size:13px">[Phone Number]</p></a>
+<a class="contact-card" href="https://wa.me/910000000000"><div class="why-ico">◍</div><h3 style="font-size:19px">WhatsApp</h3><p style="font-size:13px">Chat with concierge</p></a>
+</div>
+<div class="hours-table reveal"><div><span>Monday – Saturday</span><strong>10:00 AM – 8:00 PM</strong></div><div><span>Sunday</span><strong>11:00 AM – 6:00 PM</strong></div><div><span>Address</span><strong>[Salon Address]</strong></div><div><span>Email</span><strong>[Email Address]</strong></div></div>
+<div style="display:flex;gap:10px;margin-top:22px;flex-wrap:wrap" class="reveal">
+<a href="mailto:hello@lotusbeauty.in" class="btn btn-outline-dark">Email Us</a>
+<a href="#" class="btn btn-outline-dark">Instagram</a>
+</div>
+</div>
+<div class="form-card reveal">
+<form id="bookForm" novalidate>
+<div class="form-grid">
+<div class="field"><label for="bkName">Name *</label><input id="bkName" name="name" type="text" placeholder="Your full name" required autocomplete="name"></div>
+<div class="field"><label for="bkPhone">Phone Number *</label><input id="bkPhone" name="phone" type="tel" placeholder="+91 …" required autocomplete="tel" pattern="[0-9+()\\-\\s]{8,16}"></div>
+<div class="field"><label for="bkEmail">Email</label><input id="bkEmail" name="email" type="email" placeholder="you@example.com" autocomplete="email"></div>
+<div class="field"><label for="bkGuests">Number of Guests</label><select id="bkGuests" name="guests"><option>1 Guest</option><option>2 Guests</option><option>3 Guests</option><option>4+ / Bridal Party</option></select></div>
+<div class="field"><label for="bkDate">Preferred Date *</label><input id="bkDate" name="date" type="date" required></div>
+<div class="field"><label for="bkTime">Preferred Time *</label><select id="bkTime" name="time" required><option value="">Select…</option><option>10:00 AM</option><option>12:00 PM</option><option>2:00 PM</option><option>4:00 PM</option><option>6:00 PM</option></select></div>
+<div class="field full"><label for="bkService">Service *</label><select id="bkService" name="service" required><option value="">Select a service…</option><option>Haircut &amp; Styling</option><option>Hair Spa / Keratin</option><option>Hair Colour</option><option>Luxury Facial</option><option>Manicure / Pedicure</option><option>Party Makeup</option><option>Bridal Makeup</option><option>Pre-Bridal Package</option><option>Lotus Luxe Ritual</option><option>Other / Not sure — need consultation</option></select></div>
+<div class="field full"><label for="bkNotes">Special Request</label><textarea id="bkNotes" name="notes" rows="4" placeholder="Allergies, occasions, inspiration links, artist preference…"></textarea></div>
+</div>
+<button type="submit" class="btn btn-solid" style="width:100%;margin-top:22px">Request Appointment <span class="arr">→</span></button>
+<p style="font-size:12.5px;color:var(--muted);text-align:center;margin-top:14px">By submitting, you agree to be contacted about your booking. No spam, ever.</p>
+</form>
+<div class="confirm" id="bookConfirm"><div class="ring">✓</div><p class="eyebrow">Request Received</p><h3 style="font-size:32px;margin:12px 0">Thank you — beautifully noted.</h3><p id="bookSummary" style="color:#6E6258"></p><p style="margin-top:16px;font-size:13px;color:var(--muted)">Prefer instant confirmation? <a href="tel:+910000000000" style="border-bottom:1px solid var(--gold)">Call the salon</a> or <a href="https://wa.me/910000000000" style="border-bottom:1px solid var(--gold)">WhatsApp us</a>.</p></div>
+</div>
+</div></section>
+
+<section class="bg-cream" style="padding-top:0"><div class="wrap">
+<p class="eyebrow reveal" style="text-align:center">Find Us</p>
+<h2 class="h-section reveal" style="text-align:center">VISIT THE <em>SALON</em></h2>
+<div class="map-frame reveal"><iframe title="Lotus Beauty Salon location map" src="https://www.google.com/maps?q=Connaught+Place+New+Delhi&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+<p style="text-align:center;margin-top:14px;font-size:13px;color:var(--muted)">Replace the embedded query with your exact salon address in <code>contact.html</code>.</p>
+</div></section>
+</main>
+
+<footer><div class="foot-grid"><div class="foot-brand"><span class="logo-text" style="font-family:var(--serif);font-size:28px;letter-spacing:.3em">LOTUS</span><p class="foot-tag">Beauty, Refined.</p><p>A luxury beauty salon offering personalized hair, skin, makeup, nails, grooming and bridal experiences.</p><div class="socials"><a href="#" aria-label="Instagram">◎</a><a href="#" aria-label="Facebook">f</a><a href="#" aria-label="YouTube">▶</a><a href="#" aria-label="WhatsApp">✆</a></div></div><div><h4>Explore</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="bridal.html">Bridal</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="contact.html">Contact</a></li></ul></div><div><h4>Visit</h4><ul><li>[Salon Address]</li><li><a href="tel:+910000000000">[Phone Number]</a></li><li><a href="mailto:hello@lotusbeauty.in">[Email Address]</a></li><li>Mon–Sat · 10AM–8PM</li><li>Sunday · 11AM–6PM</li></ul></div><div><h4>Join the Lotus List</h4><p style="font-size:13.5px">Seasonal rituals, bridal previews &amp; member privileges.</p><form class="news-form"><input type="email" placeholder="Your email address" aria-label="Email address" required><button type="submit">SUBSCRIBE</button></form></div></div><div class="foot-bottom"><span>© <span data-year>2026</span> Lotus Beauty Salon. All Rights Reserved.</span><span><a href="#">Privacy Policy</a> &nbsp;|&nbsp; <a href="#">Terms &amp; Conditions</a></span></div></footer>
+<div class="sticky-book"><a class="call" href="tel:+910000000000" aria-label="Call salon">✆</a><a href="contact.html#booking" class="btn btn-gold">Book Appointment</a></div>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
